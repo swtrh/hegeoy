@@ -10,6 +10,6 @@
   "author": "hege",
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.13.3"
-  }  
+"express": "^4.13.3"
+}  
 }
