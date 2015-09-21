@@ -4,7 +4,8 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('store');
+  res.render('store', {title:'Express Store', 
+        messageURL: process.env.MESSAGE_URL});
 });
 
 router.route('/message')
