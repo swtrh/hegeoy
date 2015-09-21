@@ -1,13 +1,13 @@
 var express = require('express');
 
 var app = express();
-var port = 3000
+var port = (process.env.PORT || 3000);
 
 app.get('/', function(req,res) {
-  res.send('Hello World')
+  res.send('Hello World');
 });
 
 app.listen(port);
 
-console.log('Web server has been started. Listening on port ' + port);
+console.log('Server started on port ' + port);
 
